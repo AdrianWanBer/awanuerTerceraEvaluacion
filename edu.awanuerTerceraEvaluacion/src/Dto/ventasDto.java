@@ -6,7 +6,8 @@ import java.time.LocalDateTime;
 public class ventasDto {
 
 	/*
-	 * Esta clase ventasDto se encargara de los Getter y Setter de las ventas
+	 * Entidad encargada de las ventas
+	 * awb - 010324
 	 */
 	
 	//Variables

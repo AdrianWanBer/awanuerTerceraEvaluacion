@@ -2,6 +2,10 @@ package Dto;
 
 public class pedidoDto {
 
+	/*
+	 * Entidad encargada de los pedidos
+	 * awb - 010324
+	 */
 	int idPedido;
 	String producto;
 	int cantidadProducto;
