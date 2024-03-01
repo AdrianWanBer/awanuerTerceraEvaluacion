@@ -24,7 +24,7 @@ public interface OperativaInterfaz {
 	 * Aqui se mostraran todas las ventas del dia
 	 * awb - 010324
 	 */
-	public void mostrarVentasDia(Scanner sc, List<pedidoDto> pedidosLista);
+	public void mostrarVentasDia(Scanner sc, List<ventasDto> ventasLista);
 	
 	/*
 	 * Con este metodo se podrán crear pedidos

@@ -49,8 +49,21 @@ public class OperativaImplementacion implements OperativaInterfaz {
 	 * Metodo que se encargara de mostrar por consola todas las ventas del dia
 	 * (Gerencia) awb - 010324
 	 */
-	public void mostrarVentasDia(Scanner sc, List<pedidoDto> pedidosLista) {
-
+	@SuppressWarnings("unlikely-arg-type")
+	public void mostrarVentasDia(Scanner sc, List<ventasDto> ventasLista) {
+		System.out.println("Que fecha desea indicar: (dd-MM-yyyy) ");
+		String fecha = sc.next();
+		for (ventasDto recorrido : ventasLista) {
+			int ventaNumero = 1;
+			if (fecha.equals(recorrido.getFechaVenta())) {
+				
+				System.out.println("Venta número: " + ventaNumero);
+				System.out.println("Euros: " + recorrido.getImporteVenta());
+				System.out.println("Instante de compra: " + recorrido.getFechaVenta());
+				ventaNumero = ventaNumero + 1;
+				System.out.println();
+			}
+		}
 	}
 
 	/*
@@ -58,7 +71,6 @@ public class OperativaImplementacion implements OperativaInterfaz {
 	 * awb - 010324
 	 */
 	int idPedido = 0;
-
 	public void crearPedidoProveedores(Scanner sc, List<pedidoDto> pedidosLista) {
 		boolean ejecutarPedidos = false;
 		do {
