@@ -6,48 +6,50 @@ import java.time.LocalDateTime;
 public class ventasDto {
 
 	/*
-	 * Entidad encargada de las ventas
-	 * awb - 010324
+	 * Entidad encargada de las ventas awb - 010324
 	 */
-	
-	//Variables
+
+	// Variables
 	public int idVenta;
 	public float importeVenta = 0;
 	LocalDateTime fechaVenta;
-	
-	
-	//Getter y Setters
+
+	// Getter y Setters
 	public int getIdVenta() {
 		return idVenta;
 	}
+
 	public void setIdVenta(int idVenta) {
 		this.idVenta = idVenta;
 	}
+
 	public float getImporteVenta() {
 		return importeVenta;
 	}
+
 	public void setImporteVenta(float importeVenta) {
 		this.importeVenta = importeVenta;
 	}
+
 	public LocalDateTime getFechaVenta() {
 		return fechaVenta;
 	}
+
 	public void setFechaVenta(LocalDateTime fechaHoy) {
 		this.fechaVenta = fechaHoy;
 	}
-	
-	//Constructor con las variables
+
+	// Constructor con las variables
 	public ventasDto(int idVenta, float importeVenta, LocalDateTime fechaVenta) {
 		super();
 		this.idVenta = idVenta;
 		this.importeVenta = importeVenta;
 		this.fechaVenta = fechaVenta;
 	}
-	
-	//Constructor vacio
+
+	// Constructor vacio
 	public ventasDto() {
 		super();
 	}
-	
-	
+
 }
