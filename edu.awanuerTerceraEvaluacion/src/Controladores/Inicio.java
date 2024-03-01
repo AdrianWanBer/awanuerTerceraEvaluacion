@@ -21,7 +21,6 @@ public class Inicio {
 		List<pedidoDto> pedidosLista = new ArrayList();
 		LocalDateTime fechaHoy = LocalDateTime.now();
 		OperativaInterfaz oi = new OperativaImplementacion();
-		
 		boolean cerrarMenu = false;
 
 		while (!cerrarMenu) {
@@ -43,7 +42,7 @@ public class Inicio {
 						break;
 
 					case 2:
-							oi.crearPedidoProveedores(sc, pedidosLista);
+						oi.crearPedidoProveedores(sc, pedidosLista);
 						break;
 					}
 					break;

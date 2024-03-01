@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class MenuImplementacion implements MenuInterfaz {
 
 	/*
-	 * Metodo encargado de mostrar por consola el menu para seleccionar los distintos
-	 * submenus de la aplicacion
-	 * awb - 010324
+	 * Metodo encargado de mostrar por consola el menu para seleccionar los
+	 * distintos submenus de la aplicacion awb - 010324
 	 */
 	public int menuSeleccionMenus(Scanner sc) {
 		int seleccion;
@@ -19,10 +18,8 @@ public class MenuImplementacion implements MenuInterfaz {
 		return seleccion;
 	}
 
-
 	/*
-	 * Metodo encargado de mostrar el menu (Gerencia)
-	 * awb - 010324
+	 * Metodo encargado de mostrar el menu (Gerencia) awb - 010324
 	 */
 	public int menuGerencia(Scanner sc) {
 		int seleccion;
@@ -35,10 +32,8 @@ public class MenuImplementacion implements MenuInterfaz {
 		return seleccion;
 	}
 
-
 	/*
-	 * Metodo encargado de mostrar el menu (Empleado)
-	 * awb - 010324
+	 * Metodo encargado de mostrar el menu (Empleado) awb - 010324
 	 */
 	public int menuEmpleado(Scanner sc) {
 		int seleccion;

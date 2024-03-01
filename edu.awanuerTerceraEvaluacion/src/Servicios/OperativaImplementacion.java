@@ -71,6 +71,7 @@ public class OperativaImplementacion implements OperativaInterfaz {
 	 * awb - 010324
 	 */
 	int idPedido = 0;
+
 	public void crearPedidoProveedores(Scanner sc, List<pedidoDto> pedidosLista) {
 		boolean ejecutarPedidos = false;
 		do {
