@@ -103,6 +103,7 @@ public class OperativaImplementacion implements OperativaInterfaz {
 			System.out.println("Producto: " + pedido.getProducto());
 			System.out.println("Cantidad: " + pedido.getCantidadProducto() + " unidades");
 			System.out.println("Fecha entrega: " + pedido.getFechaEntrega());
+			System.out.println();
 		}
 	}
 
